@@ -1,5 +1,7 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 .executiveSummaryContianer {
   width: 100%;
+  border: solid 0.5px;
 }
 .smallTileWrapper {
   display: flex;

@@ -1,13 +1,24 @@
 <div class="executiveSummaryContianer">
-  <et-header></et-header>
-  <div class="smallTileWrapper">
-    <et-small-tile></et-small-tile>
-    <et-small-tile></et-small-tile>
-    <et-small-tile></et-small-tile>
-    <et-small-tile></et-small-tile>
-    <et-small-tile></et-small-tile>
-    <et-small-tile></et-small-tile>
-    <et-small-tile></et-small-tile>
-    <et-small-tile></et-small-tile>
-  </div>
+  <mat-toolbar color="primary">
+    <span> Summary And Error Details</span>
+    <span class="example-fill-remaining-space"></span>
+  </mat-toolbar>
+  <mat-tab-group>
+    <mat-tab label="Executive Summary">
+      <et-header></et-header>
+      <div class="smallTileWrapper">
+        <et-small-tile></et-small-tile>
+        <et-small-tile></et-small-tile>
+        <et-small-tile></et-small-tile>
+        <et-small-tile></et-small-tile>
+        <et-small-tile></et-small-tile>
+        <et-small-tile></et-small-tile>
+        <et-small-tile></et-small-tile>
+        <et-small-tile></et-small-tile>
+      </div>
+    </mat-tab>
+    <mat-tab label="Error Detail Dashboard"
+      ><et-error-details-header></et-error-details-header>
+    </mat-tab>
+  </mat-tab-group>
 </div>

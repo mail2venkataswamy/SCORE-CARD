@@ -1,0 +1,45 @@
+.applicationLabel {
+  color: white;
+  font-size: 10px;
+}
+
+.headerContainer {
+  width: 100%;
+  border: solid 1px;
+  display: flex;
+  height: auto;
+  background-color: rgb(16, 16, 110);
+  border: none;
+}
+.logoContainer {
+  width: 40%;
+  color: white;
+}
+
+.navigatorContainer {
+  width: 5%;
+  color: white;
+}
+
+.showOrHideHorizontalContainer {
+  width: 5%;
+  color: white;
+}
+
+.titleContainer {
+  width: 50%;
+  color: white;
+}
+.navigatorSvg {
+  width: 10px;
+  transform: rotate(90deg);
+  position: relative;
+  left: 12px;
+  top: 4px;
+}
+.horizantalPng {
+  width: 15px;
+  position: relative;
+  top: 7px;
+  left: 18px;
+}
