@@ -1,0 +1,42 @@
+.applicationLabel {
+  color: white;
+  font-size: 10px;
+}
+
+.dropdownsContainer {
+  width: 50%;
+}
+
+.headerContainer {
+  width: 100%;
+  border: solid 1px;
+  display: flex;
+  height: auto;
+  background-color: rgb(16, 16, 110);
+  border: none;
+}
+.logoContainer {
+  width: 15%;
+  color: white;
+}
+
+.navigatorContainer {
+  width: 5%;
+  color: white;
+}
+
+.showOrHideHorizontalContainer {
+  width: 5%;
+  color: white;
+}
+
+.titleContainer {
+  width: 25%;
+  color: white;
+}
+span.display-text {
+}
+
+/* Application Dropdown container */
+.applicationDropdown {
+}
