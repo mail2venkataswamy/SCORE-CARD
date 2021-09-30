@@ -14,6 +14,8 @@ import { ErrorDetailsHeaderComponent } from "./components/error-details-header/e
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTabsModule } from "@angular/material/tabs";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgMultiSelectDropDownModule } from "ng-multiselect-dropdown";
+import { MultiselectDropdownComponent } from './components/multiselect-dropdown/multiselect-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     SmallTileComponent,
     ErrorDetailsComponent,
     ErrorDetailsHeaderComponent,
+    MultiselectDropdownComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     MatToolbarModule,
     MatTabsModule,
     BrowserAnimationsModule,
+    NgMultiSelectDropDownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

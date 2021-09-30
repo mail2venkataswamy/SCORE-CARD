@@ -25,6 +25,7 @@
     "@angular/router": "~12.2.0",
     "angular-dropdown": "^0.5.5",
     "angular-dropdown-component": "^1.0.8",
+    "ng-multiselect-dropdown": "^0.3.4",
     "ng-wormhole": "^3.0.2",
     "ngx-select-dropdown": "^2.1.0",
     "rxjs": "~6.6.0",

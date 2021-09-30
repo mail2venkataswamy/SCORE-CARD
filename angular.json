@@ -44,7 +44,10 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets", "src/assets/images/*"],
-            "styles": [],
+            "styles": [
+              "src/styles.scss",
+              "node_modules/ng-multiselect-dropdown/themes/ng-multiselect-dropdown.theme.scss"
+            ],
             "scripts": []
           },
           "configurations": {

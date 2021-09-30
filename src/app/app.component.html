@@ -17,8 +17,45 @@
         <et-small-tile></et-small-tile>
       </div>
     </mat-tab>
-    <mat-tab label="Error Detail Dashboard"
-      ><et-error-details-header></et-error-details-header>
+    <mat-tab label="Error Detail Dashboard">
+      <div class="errorDetailsComponentContainer">
+        <div>
+          <et-error-details-header></et-error-details-header>
+        </div>
+
+        <div class="errorDetailsFiltercontiner">
+          <div class="filterGroup1">
+            <div class="applicationLabelComponentWrapper">
+              <div class="applicationLabel">Application</div>
+              <et-multiselect-dropdown></et-multiselect-dropdown>
+            </div>
+          </div>
+          <div class="filterGroup2">
+            <div class="applicationLabelComponentWrapper">
+              <div class="applicationLabel">Dimension</div>
+              <et-multiselect-dropdown></et-multiselect-dropdown>
+            </div>
+          </div>
+          <div class="filterGroup3">
+            <div class="applicationLabelComponentWrapper">
+              <div class="applicationLabel">Managing info. Steward</div>
+              <et-multiselect-dropdown></et-multiselect-dropdown>
+            </div>
+          </div>
+          <div class="filterGroup4">
+            <div class="applicationLabelComponentWrapper">
+              <div class="applicationLabel">Information Category</div>
+              <et-multiselect-dropdown></et-multiselect-dropdown>
+            </div>
+          </div>
+          <div class="filterGroup5">
+            <div class="applicationLabelComponentWrapper">
+              <div class="applicationLabel">Business Date</div>
+              <et-multiselect-dropdown></et-multiselect-dropdown>
+            </div>
+          </div>
+        </div>
+      </div>
     </mat-tab>
   </mat-tab-group>
 </div>

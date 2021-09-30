@@ -2,9 +2,32 @@
 .executiveSummaryContianer {
   width: 100%;
   border: solid 0.5px;
+  height: 600px;
 }
 .smallTileWrapper {
   display: flex;
   width: 100%;
   height: auto;
+}
+.errorDetailsComponentContainer {
+  height: 400px;
+}
+.errorDetailsFiltercontiner {
+  width: 99%;
+  height: 200px;
+  border: solid 1px;
+  position: relative;
+  left: 6px;
+  top: 9px;
+  display: flex;
+}
+.filterGroup1,
+.filterGroup2,
+.filterGroup3,
+.filterGroup4,
+.filterGroup5 {
+  margin-right: 36px;
+}
+.filterGroup1 .applicationLabel {
+  font-size: 15px;
 }

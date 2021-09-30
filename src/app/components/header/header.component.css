@@ -3,8 +3,9 @@
   font-size: 10px;
 }
 
-.dropdownsContainer {
+.summaryDropdownsContainer {
   width: 50%;
+  display: flex;
 }
 
 .headerContainer {
@@ -52,4 +53,10 @@ span.display-text {
   position: relative;
   top: 16px;
   left: 18px;
+}
+.applicationDropdownWrapper {
+  width: 100px;
+}
+.applicationDropdownWrapper button.ngx-dropdown-button {
+  height: 18px !important;
 }
