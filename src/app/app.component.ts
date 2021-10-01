@@ -10,5 +10,19 @@ import { IDropdownSettings } from "ng-multiselect-dropdown";
 })
 export class AppComponent implements OnInit {
   ngOnInit() {}
-  title = "QUALITY-SCORE-CARD";
+  app_title: string | undefined = "SCORECARD";
+  applicationTilesData: Array<any> = [];
+  constructor() {
+    this.applicationTilesData = [
+      { name: "Application", count: 1 },
+      { name: "Database", count: 2 },
+      { name: "Tables", count: 3 },
+      { name: "CDE Count", count: 4 },
+      { name: "Rule Count", count: 5 },
+      { name: "Records Scaned", count: 6 },
+      { name: "Records Failed", count: 7 },
+      { name: "DQ Score", count: 8 },
+    ];
+  }
+  OnInit() {}
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Inject, Input } from "@angular/core";
 
 @Component({
   selector: "et-small-tile",
@@ -6,7 +6,13 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./small-tile.component.css"],
 })
 export class SmallTileComponent implements OnInit {
-  constructor() {}
+  application = "";
+  @Input() title: string | undefined;
+  @Input() applicationTilesData: Array<any> = [];
+
+  constructor() {
+    this.application = "swamy";
+  }
 
   ngOnInit(): void {}
 }

@@ -6,15 +6,11 @@
   <mat-tab-group>
     <mat-tab label="Executive Summary">
       <et-header></et-header>
-      <div class="smallTileWrapper">
-        <et-small-tile></et-small-tile>
-        <et-small-tile></et-small-tile>
-        <et-small-tile></et-small-tile>
-        <et-small-tile></et-small-tile>
-        <et-small-tile></et-small-tile>
-        <et-small-tile></et-small-tile>
-        <et-small-tile></et-small-tile>
-        <et-small-tile></et-small-tile>
+      <div class="smallTilesContianer">
+        <et-small-tile
+          [title]="app_title"
+          [applicationTilesData]="applicationTilesData"
+        ></et-small-tile>
       </div>
     </mat-tab>
     <mat-tab label="Error Detail Dashboard">

@@ -4,11 +4,7 @@
   border: solid 0.5px;
   height: 600px;
 }
-.smallTileWrapper {
-  display: flex;
-  width: 100%;
-  height: auto;
-}
+
 .errorDetailsComponentContainer {
   height: 400px;
 }

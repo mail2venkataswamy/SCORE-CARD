@@ -1,4 +1,12 @@
-<div class="tileContainer">
-  <div></div>
-  <div></div>
+<div class="smallTilesWrapper">
+  <div
+    class="tileApplicationContainer"
+    *ngFor="let item of applicationTilesData"
+  >
+    <div class="smallTileContentWrapper">
+      <p class="name">{{ item.name }}</p>
+      <p class="count">{{ item.count }}</p>
+    </div>
+  </div>
 </div>
+<!-- [ngClass]="'tile' + item.name + 'Container'" -->
