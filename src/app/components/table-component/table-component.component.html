@@ -1,0 +1,16 @@
+<div>
+  <div class="rTable">
+    <div class="rTableHeading">
+      <div class="rTableHead"></div>
+      <div class="rTableHead">CDE Count</div>
+      <div class="rTableHead">Threshold</div>
+      <div class="rTableHead">DQ Score</div>
+    </div>
+    <div class="rTableRow" *ngFor="let row of tableData">
+      <div class="rTableCell">{{ row.parameter }}</div>
+      <div class="rTableCell">{{ row.cdeCount }}</div>
+      <div class="rTableCell">{{ row.threshold }}</div>
+      <div class="rTableCell">{{ row.dqScore }}</div>
+    </div>
+  </div>
+</div>

@@ -5,12 +5,27 @@
   </mat-toolbar>
   <mat-tab-group>
     <mat-tab label="Executive Summary">
-      <et-header></et-header>
-      <div class="smallTilesContianer">
-        <et-small-tile
-          [title]="app_title"
-          [applicationTilesData]="applicationTilesData"
-        ></et-small-tile>
+      <div class="summaryComponentsContainer">
+        <et-header
+          [summaryApplicationDropdownData]="summaryApplicationDropdownData"
+          [summaryMngInfoExecDropdownData]="summaryMngInfoExecDropdownData"
+          [summaryDateDropdownData]="summaryDateDropdownData"
+          [summaryInfoExecDropdownData]="summaryInfoExecDropdownData"
+        ></et-header>
+        <div class="smallTilesContianer">
+          <et-small-tile
+            [title]="app_title"
+            [smallTilesData]="smallTilesData"
+            [executiveSummaryObject]="executiveSummaryObject"
+          ></et-small-tile>
+          <div class="bigTilesContianer">
+            <et-big-tile-component
+              [bigTilesDataByInformationCat]="bigTilesDataByInformationCat"
+              [bigTilesDataByDimension]="bigTilesDataByDimension"
+              [bigTilesDataByReportingType]="bigTilesDataByReportingType"
+            ></et-big-tile-component>
+          </div>
+        </div>
       </div>
     </mat-tab>
     <mat-tab label="Error Detail Dashboard">
@@ -21,32 +36,88 @@
 
         <div class="errorDetailsFiltercontiner">
           <div class="filterGroup1">
-            <div class="applicationLabelComponentWrapper">
-              <div class="applicationLabel">Application</div>
-              <et-multiselect-dropdown></et-multiselect-dropdown>
+            <div class="labelComponentWrapper">
+              <div class="label">Application</div>
+              <et-multiselect-dropdown
+                [dropdownList]="applicationDropdownData"
+              ></et-multiselect-dropdown>
+            </div>
+            <div class="labelComponentWrapper">
+              <div class="label">Database</div>
+              <et-multiselect-dropdown
+                [dropdownList]="databaseDropdownData"
+              ></et-multiselect-dropdown>
+            </div>
+            <div class="labelComponentWrapper">
+              <div class="label">Table</div>
+              <et-multiselect-dropdown
+                [dropdownList]="tableDropdownData"
+              ></et-multiselect-dropdown>
             </div>
           </div>
           <div class="filterGroup2">
-            <div class="applicationLabelComponentWrapper">
-              <div class="applicationLabel">Dimension</div>
-              <et-multiselect-dropdown></et-multiselect-dropdown>
+            <div class="labelComponentWrapper">
+              <div class="label">Dimension</div>
+              <et-multiselect-dropdown
+                [dropdownList]="dimentionDropdownData"
+              ></et-multiselect-dropdown>
+            </div>
+            <div class="labelComponentWrapper">
+              <div class="label">Rule</div>
+              <et-multiselect-dropdown
+                [dropdownList]="ruleDropdownData"
+              ></et-multiselect-dropdown>
+            </div>
+            <div class="labelComponentWrapper">
+              <div class="label">CDE</div>
+              <et-multiselect-dropdown
+                [dropdownList]="cdeDropdownData"
+              ></et-multiselect-dropdown>
             </div>
           </div>
           <div class="filterGroup3">
-            <div class="applicationLabelComponentWrapper">
-              <div class="applicationLabel">Managing info. Steward</div>
-              <et-multiselect-dropdown></et-multiselect-dropdown>
+            <div class="labelComponentWrapper">
+              <div class="label">Managing info. Steward</div>
+              <et-multiselect-dropdown
+                [dropdownList]="mngInfoStewardDropdownData"
+              ></et-multiselect-dropdown>
+            </div>
+            <div class="labelComponentWrapper">
+              <div class="label">Info. Steward</div>
+              <et-multiselect-dropdown
+                [dropdownList]="infoStewardDropdownData"
+              ></et-multiselect-dropdown>
+            </div>
+            <div class="labelComponentWrapper">
+              <div class="label">Report Exec.</div>
+              <et-multiselect-dropdown
+                [dropdownList]="reportExecDropdownData"
+              ></et-multiselect-dropdown>
             </div>
           </div>
           <div class="filterGroup4">
-            <div class="applicationLabelComponentWrapper">
-              <div class="applicationLabel">Information Category</div>
-              <et-multiselect-dropdown></et-multiselect-dropdown>
+            <div class="labelComponentWrapper">
+              <div class="label">Information Category</div>
+              <et-multiselect-dropdown
+                [dropdownList]="infoCatDrpdownData"
+              ></et-multiselect-dropdown>
+            </div>
+            <div class="labelComponentWrapper">
+              <div class="label">Reporting Type</div>
+              <et-multiselect-dropdown
+                [dropdownList]="reportingTypeDropdownData"
+              ></et-multiselect-dropdown>
+            </div>
+            <div class="labelComponentWrapper">
+              <div class="label">Report Name</div>
+              <et-multiselect-dropdown
+                [dropdownList]="reportNameDropdownData"
+              ></et-multiselect-dropdown>
             </div>
           </div>
           <div class="filterGroup5">
-            <div class="applicationLabelComponentWrapper">
-              <div class="applicationLabel">Business Date</div>
+            <div class="labelComponentWrapper">
+              <div class="label">Business Date</div>
               <et-multiselect-dropdown></et-multiselect-dropdown>
             </div>
           </div>

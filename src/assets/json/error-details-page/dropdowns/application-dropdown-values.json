@@ -1,0 +1,30 @@
+[
+  {
+    "item_id": 1,
+    "item_text": "Accounts"
+  },
+  {
+    "item_id": 2,
+    "item_text": "Cards"
+  },
+  {
+    "item_id": 3,
+    "item_text": "CDM"
+  },
+  {
+    "item_id": 4,
+    "item_text": "Claims"
+  },
+  {
+    "item_id": 5,
+    "item_text": "COODS"
+  },
+  {
+    "item_id": 4,
+    "item_text": "Inventory"
+  },
+  {
+    "item_id": 5,
+    "item_text": "Policy"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": 1,
+    "item_text": "Accuracy"
+  },
+  {
+    "item_id": 2,
+    "item_text": "Completeness"
+  },
+  {
+    "item_id": 3,
+    "item_text": "Consistency"
+  },
+  {
+    "item_id": 4,
+    "item_text": "Integrity"
+  }
+]

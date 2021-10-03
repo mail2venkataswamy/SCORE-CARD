@@ -55,7 +55,7 @@ span.display-text {
   left: 18px;
 }
 .applicationDropdownWrapper {
-  width: 100px;
+  width: 25%;
 }
 .applicationDropdownWrapper button.ngx-dropdown-button {
   height: 18px !important;

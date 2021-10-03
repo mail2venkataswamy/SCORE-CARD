@@ -6,7 +6,10 @@
 }
 
 .errorDetailsComponentContainer {
-  height: 400px;
+  height: 500px;
+}
+.summaryComponentsContainer {
+  height: 500px;
 }
 .errorDetailsFiltercontiner {
   width: 99%;
@@ -23,7 +26,11 @@
 .filterGroup4,
 .filterGroup5 {
   margin-right: 36px;
+  width: 25%;
 }
-.filterGroup1 .applicationLabel {
+.filterGroup1 .label {
   font-size: 15px;
+}
+.labelComponentWrapper {
+  margin-top: 7px;
 }

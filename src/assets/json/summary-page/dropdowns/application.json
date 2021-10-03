@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "description": "Accounts"
+  },
+  {
+    "id": 2,
+    "description": "Cards"
+  },
+  {
+    "id": 3,
+    "description": "CDM"
+  },
+  {
+    "id": 4,
+    "description": "Claims"
+  },
+  {
+    "id": 5,
+    "description": "COODS"
+  },
+  {
+    "id": 4,
+    "description": "Inventory"
+  },
+  {
+    "id": 5,
+    "description": "Policy"
+  }
+]

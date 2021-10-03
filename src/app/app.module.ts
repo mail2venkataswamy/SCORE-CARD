@@ -16,6 +16,8 @@ import { MatTabsModule } from "@angular/material/tabs";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgMultiSelectDropDownModule } from "ng-multiselect-dropdown";
 import { MultiselectDropdownComponent } from './components/multiselect-dropdown/multiselect-dropdown.component';
+import { BigTileComponentComponent } from './components/big-tile-component/big-tile-component.component';
+import { TableComponentComponent } from './components/table-component/table-component.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { MultiselectDropdownComponent } from './components/multiselect-dropdown/
     ErrorDetailsComponent,
     ErrorDetailsHeaderComponent,
     MultiselectDropdownComponent,
+    BigTileComponentComponent,
+    TableComponentComponent,
   ],
   imports: [
     BrowserModule,

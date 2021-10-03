@@ -1,4 +1,79 @@
 {
+  "bigTilesData": {
+    "byInfomrationCategory": [
+      {
+        "parameter": "Customer",
+        "cdeCount": 10,
+        "dqScore": "82%",
+        "scannedRecs": 10001,
+        "dqIssueRecords": 2220,
+        "cols": 2
+      }
+    ],
+    "byDimention": [
+      {
+        "parameter": "Integrity",
+        "cdeCount": 7,
+        "threshold": "80%",
+        "dqScore": "64.6%",
+        "scannedRecs": 10001,
+        "dqIssueRecords": 3435,
+        "cols": 3
+      },
+      {
+        "parameter": "Completeness",
+        "cdeCount": 5,
+        "threshold": "80%",
+        "dqScore": "100%",
+        "scannedRecs": 10001,
+        "dqIssueRecords": 0,
+        "cols": 3
+      },
+      {
+        "parameter": "Integrity",
+        "cdeCount": 3,
+        "threshold": "80%",
+        "dqScore": "100%",
+        "scannedRecs": 10001,
+        "dqIssueRecords": 0,
+        "cols": 3
+      }
+    ],
+    "ByReportingType": [
+      {
+        "parameter": "Executive",
+        "cdeCount": 10,
+        "dqScore": "82%",
+        "scannedRecs": 10001,
+        "dqIssueRecords": 3435,
+        "cols": 3
+      },
+      {
+        "parameter": "Operations",
+        "cdeCount": 10,
+        "dqScore": "82%",
+        "scannedRecs": 10001,
+        "dqIssueRecords": 3435,
+        "cols": 3
+      },
+      {
+        "parameter": "Others",
+        "cdeCount": 7,
+        "dqScore": "92%",
+        "scannedRecs": 10001,
+        "dqIssueRecords": 1429,
+        "cols": 3
+      },
+      {
+        "parameter": "Regulatory",
+        "cdeCount": 10,
+        "dqScore": "82%",
+        "scannedRecs": 10001,
+        "dqIssueRecords": 3435,
+        "cols": 3
+      }
+    ]
+  },
   "smallTilesData": [
     { "name": "Application", "count": 1 },
     { "name": "Database", "count": 2 },

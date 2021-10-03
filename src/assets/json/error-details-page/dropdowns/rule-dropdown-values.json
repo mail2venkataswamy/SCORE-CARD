@@ -1,0 +1,46 @@
+[
+  {
+    "item_id": 1,
+    "item_text": "Age_validator"
+  },
+  {
+    "item_id": 2,
+    "item_text": "Invalid_Value_Check"
+  },
+  {
+    "item_id": 3,
+    "item_text": "LENGTH_VALIDATION"
+  },
+  {
+    "item_id": 4,
+    "item_text": "Null_Check"
+  },
+  {
+    "item_id": 5,
+    "item_text": "Valid_Value_List"
+  },
+  {
+    "item_id": 6,
+    "item_text": "Validate_Salary"
+  },
+  {
+    "item_id": 7,
+    "item_text": "Value_EQ"
+  },
+  {
+    "item_id": 8,
+    "item_text": "Value_GT"
+  },
+  {
+    "item_id": 9,
+    "item_text": "Value_GT_EQ"
+  },
+  {
+    "item_id": 10,
+    "item_text": "Value_LT"
+  },
+  {
+    "item_id": 11,
+    "item_text": "Value_LT_EQ"
+  }
+]

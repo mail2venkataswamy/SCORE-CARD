@@ -4,19 +4,31 @@
   <div class="summaryDropdownsContainer">
     <div class="applicationDropdownWrapper">
       <div class="applicationLabel">Application</div>
-      <et-simpledropdown></et-simpledropdown>
+      <et-simpledropdown
+        [options]="summaryApplicationDropdownData"
+      ></et-simpledropdown>
     </div>
     ""
     <div class="applicationDropdownWrapper">
       <div class="applicationLabel">Managing Info. Exec</div>
-      <et-simpledropdown></et-simpledropdown>
+      <et-simpledropdown
+        [options]="summaryMngInfoExecDropdownData"
+      ></et-simpledropdown>
     </div>
     ""
     <div class="applicationDropdownWrapper">
       <div class="applicationLabel">Info. Exec</div>
-      <et-simpledropdown></et-simpledropdown>
+      <et-simpledropdown
+        [options]="summaryInfoExecDropdownData"
+      ></et-simpledropdown>
     </div>
     ""
+    <div class="applicationDropdownWrapper">
+      <div class="applicationLabel">Business Date</div>
+      <et-simpledropdown
+        [options]="summaryDateDropdownData"
+      ></et-simpledropdown>
+    </div>
   </div>
   <div class="showOrHideHorizontalContainer">
     <img class="horizantalPng" src="assets/images/horizontal.png" />

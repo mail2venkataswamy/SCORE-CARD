@@ -1,0 +1,41 @@
+<div class="bigTilesWrapper">
+  <div class="tileContainer">
+    <div class="bigTileContentWrapper">
+      <div class="tileHeader">{{ "By Information Category" }}</div>
+      <div class="tableContainer">
+        <div class="informationCat">
+          <et-table-component
+            [tableData]="bigTilesDataByInformationCat"
+          ></et-table-component>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tileContainer">
+    <div class="bigTileContentWrapper">
+      <div class="tileHeader">{{ "By Dimention" }}</div>
+      <div class="tableContainer">
+        <div class="dimension">
+          <et-table-component
+            [tableData]="bigTilesDataByDimension"
+          ></et-table-component>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tileContainer">
+    <div class="bigTileContentWrapper">
+      <div class="tileHeader">{{ "By Reporting Type" }}</div>
+      <div class="tableContainer">
+        <div class="informationCat">
+          <div class="reportingType">
+            <et-table-component
+              [tableData]="bigTilesDataByReportingType"
+            ></et-table-component>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- [ngClass]="'tile' + item.name + 'Container'" *ngFor="let item of bigTilesData"-->
+</div>

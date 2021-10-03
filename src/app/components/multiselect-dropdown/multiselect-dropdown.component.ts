@@ -1,5 +1,5 @@
 import { FormBuilder, FormGroup } from "@angular/forms";
-import { Component, OnInit, EventEmitter } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { IDropdownSettings } from "ng-multiselect-dropdown";
 
 @Component({
@@ -9,11 +9,11 @@ import { IDropdownSettings } from "ng-multiselect-dropdown";
   styleUrls: ["./multiselect-dropdown.component.css"],
 })
 export class MultiselectDropdownComponent implements OnInit {
-  dropdownList: Array<any> = [];
+  @Input() dropdownList: Array<any> = [];
   selectedItems: Array<any> = [];
   dropdownSettings: IDropdownSettings = {};
   ngOnInit() {
-    this.dropdownList = [
+    /*     this.dropdownList = [
       { item_id: 1, item_text: "Accounts" },
       { item_id: 2, item_text: "Cards" },
       { item_id: 3, item_text: "CDM" },
@@ -21,7 +21,7 @@ export class MultiselectDropdownComponent implements OnInit {
       { item_id: 5, item_text: "COODS" },
       { item_id: 4, item_text: "Inventory" },
       { item_id: 5, item_text: "Policy" },
-    ];
+    ]; */
     this.selectedItems = [
       { item_id: 3, item_text: "CDM" },
       { item_id: 4, item_text: "Inventory" },

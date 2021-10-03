@@ -1,0 +1,22 @@
+[
+  {
+    "item_id": 1,
+    "item_text": "Operations"
+  },
+  {
+    "item_id": 2,
+    "item_text": "Regulatory"
+  },
+  {
+    "item_id": 3,
+    "item_text": "Executive"
+  },
+  {
+    "item_id": 4,
+    "item_text": "Others"
+  },
+  {
+    "item_id": 5,
+    "item_text": "All"
+  }
+]

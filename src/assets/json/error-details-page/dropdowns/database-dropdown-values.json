@@ -1,0 +1,22 @@
+[
+  {
+    "item_id": 1,
+    "item_text": "demo_metarepo"
+  },
+  {
+    "item_id": 2,
+    "item_text": "Gathi_db"
+  },
+  {
+    "item_id": 3,
+    "item_text": "master"
+  },
+  {
+    "item_id": 4,
+    "item_text": "metarepo"
+  },
+  {
+    "item_id": 5,
+    "item_text": "SNOWFLAKE_SAMPLE_DATA"
+  }
+]

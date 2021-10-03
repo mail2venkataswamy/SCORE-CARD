@@ -1,0 +1,54 @@
+[
+  {
+    "item_id": 1,
+    "item_text": "Banking"
+  },
+  {
+    "item_id": 2,
+    "item_text": "Cards"
+  },
+  {
+    "item_id": 3,
+    "item_text": "Covid"
+  },
+  {
+    "item_id": 4,
+    "item_text": "Credit"
+  },
+  {
+    "item_id": 5,
+    "item_text": "Customer"
+  },
+  {
+    "item_id": 6,
+    "item_text": "Fraud"
+  },
+  {
+    "item_id": 7,
+    "item_text": "Insurance"
+  },
+  {
+    "item_id": 8,
+    "item_text": "Inventory"
+  },
+  {
+    "item_id": 7,
+    "item_text": "Loans"
+  },
+  {
+    "item_id": 8,
+    "item_text": "Product"
+  },
+  {
+    "item_id": 9,
+    "item_text": "Systems"
+  },
+  {
+    "item_id": 10,
+    "item_text": "Transactions"
+  },
+  {
+    "item_id": 11,
+    "item_text": "Travel"
+  }
+]
