@@ -1,0 +1,22 @@
+<div class="summaryComponentsContainer">
+  <et-header
+    [summaryApplicationDropdownData]="summaryApplicationDropdownData"
+    [summaryMngInfoExecDropdownData]="summaryMngInfoExecDropdownData"
+    [summaryDateDropdownData]="summaryDateDropdownData"
+    [summaryInfoExecDropdownData]="summaryInfoExecDropdownData"
+  ></et-header>
+  <div class="smallTilesContianer">
+    <et-small-tile
+      [title]="app_title"
+      [smallTilesData]="smallTilesData"
+      [data]="data"
+    ></et-small-tile>
+    <div class="bigTilesContianer">
+      <et-big-tile-component
+        [bigTilesDataByInformationCat]="bigTilesDataByInformationCat"
+        [bigTilesDataByDimension]="bigTilesDataByDimension"
+        [bigTilesDataByReportingType]="bigTilesDataByReportingType"
+      ></et-big-tile-component>
+    </div>
+  </div>
+</div>

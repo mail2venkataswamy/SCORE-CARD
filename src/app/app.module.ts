@@ -18,6 +18,7 @@ import { NgMultiSelectDropDownModule } from "ng-multiselect-dropdown";
 import { MultiselectDropdownComponent } from './components/multiselect-dropdown/multiselect-dropdown.component';
 import { BigTileComponentComponent } from './components/big-tile-component/big-tile-component.component';
 import { TableComponentComponent } from './components/table-component/table-component.component';
+import { ExecutiveSummaryComponent } from './components/executive-summary/executive-summary.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { TableComponentComponent } from './components/table-component/table-comp
     MultiselectDropdownComponent,
     BigTileComponentComponent,
     TableComponentComponent,
+    ExecutiveSummaryComponent,
   ],
   imports: [
     BrowserModule,

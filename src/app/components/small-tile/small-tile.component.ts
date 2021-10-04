@@ -1,14 +1,31 @@
 import { Component, OnInit, Inject, Input } from "@angular/core";
 
-interface Tiles {
+interface SmallTilesData {
   name: string;
   count: number;
 }
-
-interface SmallTiles {
-  smallTilesData: Array<Tiles>;
+interface byInfomrationCategory {
+  parameter: string;
+  cdeCount: number;
+  dqScore: string;
+  scannedRecs: number;
+  dqIssueRecords: number;
+  cols: number;
 }
-interface Execsummary {}
+interface byDimention {
+  parameter: string;
+  cdeCount: number;
+  dqScore: string;
+  scannedRecs: number;
+  dqIssueRecords: number;
+  cols: number;
+}
+export interface data {
+  byInformationCategory: Array<byInfomrationCategory>;
+  byDimention: Array<byDimention>;
+  byReportingType: Array<byDimention>;
+  smallTilesData: Array<SmallTilesData>;
+}
 
 @Component({
   selector: "et-small-tile",
@@ -18,12 +35,17 @@ interface Execsummary {}
 export class SmallTileComponent implements OnInit {
   application = "";
   @Input() title: string | undefined;
-  @Input() smallTilesData: Array<any> = [];
-  @Input() executiveSummaryObject: SmallTiles[] = [];
+  @Input() smallTilesData: Array<SmallTilesData> = [];
+  @Input() executiveSummaryObject: Object = [];
+  @Input() data: {} = {};
+  @Input() execSummaryData: object = {};
 
   constructor() {
-    this.application = "swamy";
+    //this.application = "swamy";
+    //console.log("samll", this.data);
   }
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    console.log("samll", this.data);
+  }
 }

@@ -34,6 +34,7 @@ interface Tiles {
 interface SmallTiles {
   smallTilesData: Array<Tiles>;
 }
+
 @Component({
   selector: "et-root",
   //templateUrl: './app.component.html',
@@ -57,22 +58,22 @@ export class AppComponent implements OnInit {
   reportNameDropdownData: Array<any> = reportNameDropdownData;
 
   //Summary State
-  executiveSummaryObject: SmallTiles[] = [];
-  smallTilesData: Array<any> = executiveSummaryObject.smallTilesData;
+  data: Object = executiveSummaryObject.data;
+  //executiveSummaryObject["bigTilesData"].byDimention;
+  smallTilesData: Array<any> = executiveSummaryObject.data.smallTilesData;
   bigTilesDataByInformationCat: Array<any> =
-    executiveSummaryObject.bigTilesData.byInfomrationCategory;
-  bigTilesDataByDimension: Array<any> =
-    executiveSummaryObject.bigTilesData.byDimention;
+    executiveSummaryObject.data.byInfomrationCategory;
+  bigTilesDataByDimension: Array<any> = executiveSummaryObject.data.byDimention;
   bigTilesDataByReportingType: Array<any> =
-    executiveSummaryObject.bigTilesData.ByReportingType;
+    executiveSummaryObject.data.ByReportingType;
   applicationDropdownData: Array<any> = applicationDropdownData;
   dimentionDropdownData: Array<any> = dimentionDropdownData;
-
   summaryApplicationDropdownData: Array<any> = summaryApplicationDropdownData;
   summaryMngInfoExecDropdownData: Array<any> = summaryMngInfoExecDropdownData;
   summaryDateDropdownData: Array<any> = summaryDateDropdownData;
   summaryInfoExecDropdownData: Array<any> = summaryInfoExecDropdownData;
 
-  constructor() {}
-  OnInit() {}
+  constructor() {
+    //console.log(Object.keys(executiveSummaryObject.data));
+  }
 }

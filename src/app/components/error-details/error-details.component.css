@@ -1,0 +1,36 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.executiveSummaryContianer {
+  width: 100%;
+  border: solid 0.5px;
+  height: 600px;
+}
+
+.errorDetailsComponentContainer {
+  height: 500px;
+}
+.summaryComponentsContainer {
+  height: 500px;
+}
+.errorDetailsFiltercontiner {
+  width: 99%;
+  height: 200px;
+  border: solid 1px;
+  position: relative;
+  left: 6px;
+  top: 9px;
+  display: flex;
+}
+.filterGroup1,
+.filterGroup2,
+.filterGroup3,
+.filterGroup4,
+.filterGroup5 {
+  margin-right: 36px;
+  width: 25%;
+}
+.filterGroup1 .label {
+  font-size: 15px;
+}
+.labelComponentWrapper {
+  margin-top: 7px;
+}
