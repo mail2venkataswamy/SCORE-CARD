@@ -1,12 +1,18 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 .executiveSummaryContianer {
-  width: 100%;
+  height: auto;
   border: solid 0.5px;
-  height: 600px;
+  /* height: 600px; 
+    position: relative;
+  left: 10px;
+  width: 99%;*/
+  min-height: 700px;
+  height: 664px;
 }
 
 .errorDetailsComponentContainer {
-  height: 500px;
+  min-height: 612px;
+  height: auto;
 }
 .summaryComponentsContainer {
   height: 500px;
@@ -27,10 +33,20 @@
 .filterGroup5 {
   margin-right: 36px;
   width: 25%;
+  position: relative;
+  left: 6px;
 }
 .filterGroup1 .label {
   font-size: 15px;
 }
 .labelComponentWrapper {
   margin-top: 7px;
+}
+.gridWrapper {
+  width: 99%;
+  position: relative;
+  top: 16px;
+  right: -5px;
+  border: solid 0.5px;
+  height: auto;
 }

@@ -1,8 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 @import "angular-dropdown/styles";
+@import "~ng-zorro-antd/ng-zorro-antd.min.css";
+@import "~ng-zorro-antd/style/index.min.css"; /* Import base styles */
+@import "~ng-zorro-antd/button/style/index.min.css"; /* Import one component's styles */
 .mat-tab-labels {
   border: solid 1px !important;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+.mat-tab-body-content {
+  height: 100%;
+  overflow: hidden !important;
+}
+.ant-table-tbody > tr.ant-table-placeholder {
+  text-align: center;
+  display: none !important;
+}
+.mat-tab-header {
+  height: 33px !important;
+}
+.mat-tab-label-container {
+  height: 32px !important;
+  position: relative !important;
+  top: -9px !important;
+}
+.mat-tab-label-container {
+  height: 36px !important;
 }

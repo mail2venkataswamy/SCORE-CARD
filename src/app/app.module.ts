@@ -15,10 +15,14 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTabsModule } from "@angular/material/tabs";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { NgMultiSelectDropDownModule } from "ng-multiselect-dropdown";
-import { MultiselectDropdownComponent } from './components/multiselect-dropdown/multiselect-dropdown.component';
-import { BigTileComponentComponent } from './components/big-tile-component/big-tile-component.component';
-import { TableComponentComponent } from './components/table-component/table-component.component';
-import { ExecutiveSummaryComponent } from './components/executive-summary/executive-summary.component';
+import { MultiselectDropdownComponent } from "./components/multiselect-dropdown/multiselect-dropdown.component";
+import { BigTileComponentComponent } from "./components/big-tile-component/big-tile-component.component";
+import { TableComponentComponent } from "./components/table-component/table-component.component";
+import { ExecutiveSummaryComponent } from "./components/executive-summary/executive-summary.component";
+import { ErrorDetailsGridComponent } from "./components/error-details-grid/error-details-grid.component";
+import { NzTableModule } from "ng-zorro-antd/table";
+import { DqScoreGraphComponent } from './components/dq-score-graph/dq-score-graph.component';
+import { ErrorDetailsMetricGridComponent } from './components/error-details-metric-grid/error-details-metric-grid.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,9 @@ import { ExecutiveSummaryComponent } from './components/executive-summary/execut
     BigTileComponentComponent,
     TableComponentComponent,
     ExecutiveSummaryComponent,
+    ErrorDetailsGridComponent,
+    DqScoreGraphComponent,
+    ErrorDetailsMetricGridComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +48,7 @@ import { ExecutiveSummaryComponent } from './components/executive-summary/execut
     MatTabsModule,
     BrowserAnimationsModule,
     NgMultiSelectDropDownModule.forRoot(),
+    NzTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

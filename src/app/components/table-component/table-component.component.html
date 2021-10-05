@@ -3,14 +3,41 @@
     <div class="rTableHeading">
       <div class="rTableHead"></div>
       <div class="rTableHead">CDE Count</div>
-      <div class="rTableHead">Threshold</div>
+      <div
+        class="rTableHead"
+        class="rTableRow"
+        [ngStyle]="{
+          display: tableData[0].threshold === undefined ? 'none' : ''
+        }"
+      >
+        Threshold
+      </div>
       <div class="rTableHead">DQ Score</div>
     </div>
-    <div class="rTableRow" *ngFor="let row of tableData">
-      <div class="rTableCell">{{ row.parameter }}</div>
-      <div class="rTableCell">{{ row.cdeCount }}</div>
-      <div class="rTableCell">{{ row.threshold }}</div>
-      <div class="rTableCell">{{ row.dqScore }}</div>
+    <div
+      class="rTableRow"
+      [ngStyle]="{
+        color: row.dqScore > 80 ? 'green' : 'red',
+        'font-weight': '500'
+      }"
+      *ngFor="let row of tableData"
+    >
+      <div
+        [ngStyle]="{ color: 'black', 'font-weight': '500' }"
+        class="rTableCell"
+      >
+        {{ row.parameter }}
+      </div>
+      <div class="rTableCell">
+        {{ row.cdeCount }}
+      </div>
+      <div
+        class="rTableCell"
+        [ngStyle]="{ display: row.threshold === undefined ? 'none' : '' }"
+      >
+        {{ row.threshold }}%
+      </div>
+      <div class="rTableCell">{{ row.dqScore }}%</div>
     </div>
   </div>
 </div>

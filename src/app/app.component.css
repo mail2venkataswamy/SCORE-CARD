@@ -2,7 +2,7 @@
 .executiveSummaryContianer {
   width: 100%;
   border: solid 0.5px;
-  height: 600px;
+  height: 664px;
 }
 
 .errorDetailsComponentContainer {
@@ -27,6 +27,8 @@
 .filterGroup5 {
   margin-right: 36px;
   width: 25%;
+  position: relative;
+  left: 6px;
 }
 .filterGroup1 .label {
   font-size: 15px;

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
-
+export interface table {}
 @Component({
   selector: "et-table-component",
   templateUrl: "./table-component.component.html",
@@ -11,5 +11,6 @@ export class TableComponentComponent implements OnInit {
   @Input() bigTilesDataByDimension: Array<any> = [];
   @Input() bigTilesDataByReportingType: Array<any> = [];
   @Input() tableData: Array<any> = [];
+
   ngOnInit(): void {}
 }

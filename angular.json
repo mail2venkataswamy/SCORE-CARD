@@ -46,7 +46,8 @@
             "assets": ["src/favicon.ico", "src/assets", "src/assets/images/*"],
             "styles": [
               "src/styles.scss",
-              "node_modules/ng-multiselect-dropdown/themes/ng-multiselect-dropdown.theme.scss"
+              "node_modules/ng-multiselect-dropdown/themes/ng-multiselect-dropdown.theme.scss",
+              "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
             ],
             "scripts": []
           },
