@@ -23,6 +23,7 @@ import { ErrorDetailsGridComponent } from "./components/error-details-grid/error
 import { NzTableModule } from "ng-zorro-antd/table";
 import { DqScoreGraphComponent } from './components/dq-score-graph/dq-score-graph.component';
 import { ErrorDetailsMetricGridComponent } from './components/error-details-metric-grid/error-details-metric-grid.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ErrorDetailsMetricGridComponent } from './components/error-details-metr
     ErrorDetailsGridComponent,
     DqScoreGraphComponent,
     ErrorDetailsMetricGridComponent,
+    TooltipComponent,
   ],
   imports: [
     BrowserModule,

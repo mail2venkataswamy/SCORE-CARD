@@ -1,4 +1,4 @@
-<nz-table>
+<nz-table [nzScroll]="{ y: '240px' }">
   <thead>
     <tr>
       <th>Business Date</th>
@@ -10,18 +10,42 @@
       <th>SQL</th>
       <th>Argument Text</th>
       <th>Dimension</th>
-      <th>DQ Issue Count</th>
       <th>PK Name</th>
       <th>PK Value</th>
       <th>Failed Value</th>
+      <th>DQ Issue Count</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>{{ "" }}</td>
-      <td>{{ "" }}</td>
-      <td>{{ "" }}</td>
-      <td>""</td>
+    <tr *ngFor="let row of gridData">
+      <td>{{ row.businessDate }}</td>
+      <td>{{ row.application }}</td>
+      <td>{{ row.table }}</td>
+      <td>{{ row.column }}</td>
+      <td>{{ row.rule }}</td>
+      <td>{{ row.ruleDescription }}</td>
+      <td>{{ row.sql }}</td>
+      <td>{{ row.argumentText }}</td>
+      <td>{{ row.dimension }}</td>
+      <td>{{ row.pkName }}</td>
+      <td>{{ row.pkValue }}</td>
+      <td>{{ row.failedValue }}</td>
+      <td
+        title="  Business Date: {{ row.businessDate }},
+                 DQ Issue Count: {{ row.application }},
+                 Table: {{ row.table }},
+                 Column: {{ row.column }},
+                 Rule: {{ row.rule }},
+                 Rule Description: {{ row.ruleDescription }},
+                 SQL : {{ row.sql }},
+                 argument Text: {{ row.argumentText }},
+                 Dimension: {{ row.dimension }},
+                 PK Name: {{ row.pkName }},
+                 PK Value: {{ row.pkValue }},
+                 Failed Value: {{ row.failedValue }}"
+      >
+        {{ row.dqIsuueCount }}
+      </td>
     </tr>
   </tbody>
 </nz-table>

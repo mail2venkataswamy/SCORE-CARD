@@ -6,13 +6,11 @@
     position: relative;
   left: 10px;
   width: 99%;*/
-  min-height: 700px;
-  height: 664px;
 }
 
 .errorDetailsComponentContainer {
   min-height: 612px;
-  height: auto;
+  height: 500px;
 }
 .summaryComponentsContainer {
   height: 500px;
@@ -48,5 +46,6 @@
   top: 16px;
   right: -5px;
   border: solid 0.5px;
-  height: auto;
+  height: 100%;
+  overflow: scroll;
 }

@@ -56,6 +56,8 @@ export class AppComponent implements OnInit {
   cdeDropdownData: Array<any> = cdeDropdownData;
   reportExecDropdownData: Array<any> = reportExecDropdownData;
   reportNameDropdownData: Array<any> = reportNameDropdownData;
+  applicationDropdownData: Array<any> = applicationDropdownData;
+  dimentionDropdownData: Array<any> = dimentionDropdownData;
 
   //Summary State
   data: Object = executiveSummaryObject.data;
@@ -66,8 +68,7 @@ export class AppComponent implements OnInit {
   bigTilesDataByDimension: Array<any> = executiveSummaryObject.data.byDimention;
   bigTilesDataByReportingType: Array<any> =
     executiveSummaryObject.data.ByReportingType;
-  applicationDropdownData: Array<any> = applicationDropdownData;
-  dimentionDropdownData: Array<any> = dimentionDropdownData;
+
   summaryApplicationDropdownData: Array<any> = summaryApplicationDropdownData;
   summaryMngInfoExecDropdownData: Array<any> = summaryMngInfoExecDropdownData;
   summaryDateDropdownData: Array<any> = summaryDateDropdownData;
