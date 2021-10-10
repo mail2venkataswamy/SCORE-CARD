@@ -36,10 +36,10 @@ export class ErrorDetailsMetricGridComponent implements OnInit {
     <div class="ageLabel">Age</div>
     <div
       class="ageValue"
-      [ngStyle]="{
+      [ngStyle]="
         width: ${metricGraphData.cdeScore.age} - 25 + '%',
         background: ${metricGraphData.cdeScore.age} < 100 ? 'red' : 'green'
-      }"
+      "
     >
       ${metricGraphData.cdeScore.age}%
     </div>
@@ -141,6 +141,53 @@ export class ErrorDetailsMetricGridComponent implements OnInit {
       let div = document.getElementById("section2");
       //let div = document.getElementsByClassName("section2")[0];
       div?.insertAdjacentElement("afterend", sec3);
+      let ageValue = document.getElementsByClassName("ageValue")[0];
+      let creditScore = document.getElementsByClassName("creditScoreValue")[0];
+      let rowNumber = document.getElementsByClassName("rowNumberValue")[0];
+      let customerId = document.getElementsByClassName("customerIdValue")[0];
+      let isActiveMember = document.getElementsByClassName(
+        "isActiveMemberValue"
+      )[0];
+      let ageBackground =
+        this.metricGraphData.cdeScore.age < 100 ? "red" : "green";
+      let creditScoreBackground =
+        this.metricGraphData.cdeScore.creditScore < 100 ? "red" : "green";
+      let rowNumberBackground =
+        this.metricGraphData.cdeScore.rowNumber < 100 ? "red" : "green";
+      let customerIdBackground =
+        this.metricGraphData.cdeScore.customerId < 100 ? "red" : "green";
+      let ageBackgroundBackground =
+        this.metricGraphData.cdeScore.isActiveMember < 100 ? "red" : "green";
+      ageValue.setAttribute(
+        "style",
+        `width:${
+          this.metricGraphData.cdeScore.age - 25
+        }%;background:${ageBackground}`
+      );
+      creditScore.setAttribute(
+        "style",
+        `width:${
+          this.metricGraphData.cdeScore.creditScore - 25
+        }%;background:${creditScoreBackground}`
+      );
+      rowNumber.setAttribute(
+        "style",
+        `width:${
+          this.metricGraphData.cdeScore.rowNumber - 25
+        }%;background:${rowNumberBackground}`
+      );
+      customerId.setAttribute(
+        "style",
+        `width:${
+          this.metricGraphData.cdeScore.customerId - 25
+        }%;background:${customerIdBackground}`
+      );
+      isActiveMember.setAttribute(
+        "style",
+        `width:${
+          this.metricGraphData.cdeScore.isActiveMember - 25
+        }%;background:${ageBackgroundBackground}`
+      );
     }
   }
 }

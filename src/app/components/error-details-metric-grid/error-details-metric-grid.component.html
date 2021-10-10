@@ -12,13 +12,19 @@
       </div>
       <div class="metricsHolder">
         <div id="section1">
-          <div class="section1Label">{{ metricGraphData.application }}</div>
-          <div class="section1Metric"><p class="percentile">82%</p></div>
+          <div class="section1Label">
+            {{ metricGraphData.applicationData.item }}
+          </div>
+          <div class="section1Metric">
+            <p class="percentile">
+              {{ metricGraphData.applicationData.percentile }}%
+            </p>
+          </div>
         </div>
         <div id="section2">
-          <div class="section2Label">{{ metricGraphData.tables }}</div>
+          <div class="section2Label">{{ metricGraphData.tables.item }}</div>
           <div class="section2Metric" (click)="removeSection3()">
-            <p class="percentile">82%</p>
+            <p class="percentile">{{ metricGraphData.tables.percentile }}%</p>
           </div>
         </div>
 

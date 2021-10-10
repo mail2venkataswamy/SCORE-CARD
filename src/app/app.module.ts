@@ -21,10 +21,11 @@ import { TableComponentComponent } from "./components/table-component/table-comp
 import { ExecutiveSummaryComponent } from "./components/executive-summary/executive-summary.component";
 import { ErrorDetailsGridComponent } from "./components/error-details-grid/error-details-grid.component";
 import { NzTableModule } from "ng-zorro-antd/table";
-import { DqScoreGraphComponent } from './components/dq-score-graph/dq-score-graph.component';
-import { ErrorDetailsMetricGridComponent } from './components/error-details-metric-grid/error-details-metric-grid.component';
-import { TooltipComponent } from './components/tooltip/tooltip.component';
-
+import { DqScoreGraphComponent } from "./components/dq-score-graph/dq-score-graph.component";
+import { ErrorDetailsMetricGridComponent } from "./components/error-details-metric-grid/error-details-metric-grid.component";
+import { TooltipComponent } from "./components/tooltip/tooltip.component";
+import { ChartsModule } from "ng2-charts";
+import { LineChartComponent } from './components/line-chart/line-chart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
     DqScoreGraphComponent,
     ErrorDetailsMetricGridComponent,
     TooltipComponent,
+    LineChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,6 +53,7 @@ import { TooltipComponent } from './components/tooltip/tooltip.component';
     BrowserAnimationsModule,
     NgMultiSelectDropDownModule.forRoot(),
     NzTableModule,
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

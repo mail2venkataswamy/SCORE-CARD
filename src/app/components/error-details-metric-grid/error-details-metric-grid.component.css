@@ -71,8 +71,6 @@
   display: block;
   align-items: center;
 }
-.metricGraphContent .metricsHolder .section3Label {
-}
 
 .section1Label,
 .section2Label {
@@ -129,34 +127,7 @@
 .rowNumberValue,
 .customerIdValue,
 .isActiveMemberValue {
-  /*  width: 75%; */
   text-align: center;
   border-bottom: solid 0.01px;
+  color: white;
 }
-/* .ageValue {
-  position: relative;
-  left: 79px;
-  width: 83%;
-}
-.creditScoreValue {
-  position: relative;
-  left: 30px;
-  width: 83%;
-}
-
-.rowNumberValue {
-  position: relative;
-  left: 26px;
-  width: 83%;
-}
-
-.customerIdValue {
-  position: relative;
-  left: 32px;
-  width: 83%;
-}
-.isActiveMemberValue {
-  position: relative;
-  left: 3px;
-  width: 83%;
-} */

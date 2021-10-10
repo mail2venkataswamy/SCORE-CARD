@@ -1,6 +1,6 @@
 {
-  "application": "Claims",
-  "tables": "Bank_Churn_Modeling",
+  "applicationData": { "item": "Claims", "percentile": 80 },
+  "tables": { "item": "Bank_Churn_Modeling", "percentile": 82 },
   "cdeScore": {
     "creditScore": 39,
     "age": 50,
