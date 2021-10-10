@@ -10,9 +10,11 @@ import { IDropdownSettings } from "ng-multiselect-dropdown";
 })
 export class MultiselectDropdownComponent implements OnInit {
   @Input() dropdownList: Array<any> = [];
-  selectedItems: Array<any> = [];
+  @Input() selectedItems: Array<any> = [];
   dropdownSettings: IDropdownSettings = {};
+  @Input() onItemSelect: (args: any) => void;
   ngOnInit() {
+    console.log("from child", this.selectedItems);
     /*     this.dropdownList = [
       { item_id: 1, item_text: "Accounts" },
       { item_id: 2, item_text: "Cards" },
@@ -22,10 +24,7 @@ export class MultiselectDropdownComponent implements OnInit {
       { item_id: 4, item_text: "Inventory" },
       { item_id: 5, item_text: "Policy" },
     ]; */
-    this.selectedItems = [
-      { item_id: 3, item_text: "CDM" },
-      { item_id: 4, item_text: "Inventory" },
-    ];
+    //this.selectedItems = [];
     this.dropdownSettings = {
       singleSelection: false,
       idField: "item_id",
@@ -37,10 +36,12 @@ export class MultiselectDropdownComponent implements OnInit {
     };
   }
   constructor() {}
-  onItemSelect(item: any) {
+  /*   onItemSelect(item: any) {
     console.log(item);
-  }
+    this.selectedItems.push(item);
+    console.log(this.selectedItems);
+  } */
   onSelectAll(items: any) {
-    console.log(items);
+    console.log(this.selectedItems);
   }
 }

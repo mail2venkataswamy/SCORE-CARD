@@ -21,18 +21,26 @@ import summaryApplicationDropdownData from "src/assets/json/summary-page/dropdow
 import summaryMngInfoExecDropdownData from "src/assets/json/summary-page/dropdowns/managing-info-exec.json";
 import summaryDateDropdownData from "src/assets/json/summary-page/dropdowns/date.json";
 import summaryInfoExecDropdownData from "src/assets/json/summary-page/dropdowns/info-exec.json";
+import errorDetailsGridData from "src/assets/json/error-details-page/grid-data.json";
 
-interface SmallTileData {
-  name: string;
-  count: number;
-}
-interface Tiles {
-  name: string;
-  count: number;
+export interface data {
+  businessDate: string;
+  application: string;
+  table: string;
+  column: string;
+  rule: string;
+  ruleDescription: string;
+  sql: string;
+  argumentText: string;
+  dimension: string;
+  pkName: string;
+  pkValue: string;
+  failedValue: string;
+  dqIsuueCount: string;
 }
 
-interface SmallTiles {
-  smallTilesData: Array<Tiles>;
+export interface errorDetailsGrid {
+  gridData: Array<data>;
 }
 
 @Component({
@@ -73,8 +81,33 @@ export class AppComponent implements OnInit {
   summaryMngInfoExecDropdownData: Array<any> = summaryMngInfoExecDropdownData;
   summaryDateDropdownData: Array<any> = summaryDateDropdownData;
   summaryInfoExecDropdownData: Array<any> = summaryInfoExecDropdownData;
+  applicationSelectedItems: Array<any> = [];
+  errorDetailsGridData: Array<any> = errorDetailsGridData;
+  errorDetailsfilters: Array<any> = [];
 
-  constructor() {
-    //console.log(Object.keys(executiveSummaryObject.data));
-  }
+  constructor() {}
+  onSlectApplicationItem = (item: any): void => {
+    console.log(" called onSlectApplicationItem", item);
+    this.applicationSelectedItems.push(item);
+    this.errorDetailsfilters.push(item);
+    console.log(" selected items", this.applicationSelectedItems);
+    console.log(" filter items", this.errorDetailsfilters);
+    this.filteredData(this.errorDetailsfilters, this.errorDetailsGridData);
+  };
+  filteredData = (
+    errorDetailsfilters: Array<any>,
+    errorDetailsGridData: Array<any>
+  ) => {
+    /*     this.errorDetailsfilters.map((item) => {
+      if (
+        item.item_text.toLowerCase() === "claims" &&
+        (item.item_text.toLowerCase() === "accuracy" ||
+          item.item_text.toLowerCase() === "integrity")
+      ) {
+        this.errorDetailsGridData = errorDetailsGridData;
+      } else {
+        this.errorDetailsGridData = [];
+      }
+    }); */
+  };
 }

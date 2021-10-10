@@ -1,0 +1,11 @@
+{
+  "application": "Claims",
+  "tables": "Bank_Churn_Modeling",
+  "cdeScore": {
+    "creditScore": 39,
+    "age": 50,
+    "rowNumber": 64,
+    "customerId": 88,
+    "isActiveMember": 100
+  }
+}

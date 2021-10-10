@@ -27,3 +27,136 @@
   height: auto;
   overflow: auto;
 }
+.metricGraphContent .headers {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  text-align: center;
+}
+.metricGraphContent .headers .header1 {
+  height: 100%;
+  width: 30%;
+}
+.metricGraphContent .headers .header2 {
+  height: 100%;
+  width: 33%;
+}
+.metricGraphContent .headers .header3 {
+  height: 100%;
+  width: 37%;
+}
+.metricGraphContent .metricsHolder {
+  height: 110px;
+  width: 100%;
+  position: relative;
+  top: 1px;
+  display: flex;
+}
+.metricGraphContent .metricsHolder #section1 {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.metricGraphContent .metricsHolder #section2 {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.metricGraphContent .metricsHolder #section3 {
+  height: 100%;
+  width: 30%;
+  display: block;
+  align-items: center;
+}
+.metricGraphContent .metricsHolder .section3Label {
+}
+
+.section1Label,
+.section2Label {
+  width: 20%;
+}
+.section1Label,
+.section2Label {
+  text-align: right;
+  position: relative;
+  right: 21px;
+}
+.section2Label {
+  right: 38px;
+}
+
+.section1Metric,
+.section2Metric {
+  height: 77px;
+  width: 75%;
+  background-color: rgb(49, 175, 49);
+  color: white;
+  text-align: center;
+}
+.section1Metric {
+  position: relative;
+  left: -19px;
+}
+.percentile {
+  position: relative;
+  top: 27px;
+}
+.cdeMetricRow {
+  display: flex;
+  width: 100%;
+}
+.age,
+.creditScore,
+.rowNumber,
+.customerId,
+.isActiveMember {
+  display: flex;
+  width: 100%;
+  height: 21px;
+}
+.ageLabel,
+.creditScoreLabel,
+.rowNumberLabel,
+.customerIdLabel,
+.isActiveMemberLabel {
+  width: 25%;
+}
+.ageValue,
+.creditScoreValue,
+.rowNumberValue,
+.customerIdValue,
+.isActiveMemberValue {
+  /*  width: 75%; */
+  text-align: center;
+  border-bottom: solid 0.01px;
+}
+/* .ageValue {
+  position: relative;
+  left: 79px;
+  width: 83%;
+}
+.creditScoreValue {
+  position: relative;
+  left: 30px;
+  width: 83%;
+}
+
+.rowNumberValue {
+  position: relative;
+  left: 26px;
+  width: 83%;
+}
+
+.customerIdValue {
+  position: relative;
+  left: 32px;
+  width: 83%;
+}
+.isActiveMemberValue {
+  position: relative;
+  left: 3px;
+  width: 83%;
+} */

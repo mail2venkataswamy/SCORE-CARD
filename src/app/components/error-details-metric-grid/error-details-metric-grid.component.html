@@ -3,6 +3,95 @@
     <div class="metricGraphHeader">
       {{ "Bottom 5 Applications, Tables and CDE's By DQ Score" }}
     </div>
-    <div class="metricGraphContent"></div>
+    <div class="metricGraphContent">
+      <div class="liner"></div>
+      <div class="headers">
+        <div class="header1">Application</div>
+        <div class="header2">Tables</div>
+        <div class="header3">CDE's</div>
+      </div>
+      <div class="metricsHolder">
+        <div id="section1">
+          <div class="section1Label">{{ metricGraphData.application }}</div>
+          <div class="section1Metric"><p class="percentile">82%</p></div>
+        </div>
+        <div id="section2">
+          <div class="section2Label">{{ metricGraphData.tables }}</div>
+          <div class="section2Metric" (click)="removeSection3()">
+            <p class="percentile">82%</p>
+          </div>
+        </div>
+
+        <div id="section3">
+          <div class="age">
+            <div class="ageLabel">Age</div>
+            <div
+              class="ageValue"
+              [ngStyle]="{
+                width: metricGraphData.cdeScore.age - 25 + '%',
+                background: metricGraphData.cdeScore.age < 100 ? 'red' : 'green'
+              }"
+            >
+              {{ metricGraphData.cdeScore.age }}%
+            </div>
+          </div>
+          <div class="creditScore">
+            <div class="creditScoreLabel">CreditScore</div>
+
+            <div
+              class="creditScoreValue"
+              [ngStyle]="{
+                width: metricGraphData.cdeScore.creditScore - 25 + '%',
+                background:
+                  metricGraphData.cdeScore.creditScore < 100 ? 'red' : 'green'
+              }"
+            >
+              {{ metricGraphData.cdeScore.creditScore }}%
+            </div>
+          </div>
+          <div class="rowNumber">
+            <div class="rowNumberLabel">RowNumber</div>
+            <div
+              class="rowNumberValue"
+              [ngStyle]="{
+                width: metricGraphData.cdeScore.rowNumber - 25 + '%',
+                background:
+                  metricGraphData.cdeScore.rowNumber < 100 ? 'red' : 'green'
+              }"
+            >
+              {{ metricGraphData.cdeScore.rowNumber }}%
+            </div>
+          </div>
+          <div class="customerId">
+            <div class="customerIdLabel">CustomerId</div>
+            <div
+              class="customerIdValue"
+              [ngStyle]="{
+                width: metricGraphData.cdeScore.customerId - 25 + '%',
+                background:
+                  metricGraphData.cdeScore.customerId < 100 ? 'red' : 'green'
+              }"
+            >
+              {{ metricGraphData.cdeScore.customerId }}%
+            </div>
+          </div>
+          <div class="isActiveMember">
+            <div class="isActiveMemberLabel">IsActiveMember</div>
+            <div
+              class="isActiveMemberValue"
+              [ngStyle]="{
+                width: metricGraphData.cdeScore.isActiveMember - 25 + '%',
+                background:
+                  metricGraphData.cdeScore.isActiveMember < 100
+                    ? 'red'
+                    : 'green'
+              }"
+            >
+              {{ metricGraphData.cdeScore.isActiveMember }}%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

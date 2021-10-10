@@ -19,6 +19,10 @@ export class ErrorDetailsComponent implements OnInit {
   @Input() databaseDropdownData: Array<any> = [];
   @Input() applicationDropdownData: Array<any> = [];
   @Input() dropdownList: Array<any> = [];
+  @Input() onSlectApplicationItem: (args: any) => void;
+  @Input() applicationSelectedItems: Array<any> = [];
+  @Input() errorDetailsGridData: Array<any> = [];
+
   constructor() {}
 
   ngOnInit(): void {}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { NzTableModule } from "ng-zorro-antd/table";
 import gridData from "src/assets/json/error-details-page/grid-data.json";
 
@@ -9,6 +9,7 @@ import gridData from "src/assets/json/error-details-page/grid-data.json";
 })
 export class ErrorDetailsGridComponent implements OnInit {
   gridData = gridData;
+  @Input() errorDetailsGridData: Array<any> = [];
   constructor() {}
 
   ngOnInit(): void {}

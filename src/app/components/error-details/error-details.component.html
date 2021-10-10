@@ -9,6 +9,8 @@
         <div class="label">Application</div>
         <et-multiselect-dropdown
           [dropdownList]="applicationDropdownData"
+          [onItemSelect]="onSlectApplicationItem"
+          [selectedItems]="applicationSelectedItems"
         ></et-multiselect-dropdown>
       </div>
       <div class="labelComponentWrapper">
@@ -92,6 +94,8 @@
     </div>
   </div>
   <div class="gridWrapper">
-    <et-error-details-grid></et-error-details-grid>
+    <et-error-details-grid
+      [errorDetailsGridData]="errorDetailsGridData"
+    ></et-error-details-grid>
   </div>
 </div>
